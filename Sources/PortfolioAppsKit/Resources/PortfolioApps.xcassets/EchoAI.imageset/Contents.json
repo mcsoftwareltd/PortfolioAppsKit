@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "echoai-icon.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
