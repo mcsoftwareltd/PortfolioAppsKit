@@ -10,6 +10,13 @@ final class PortfolioAppsCatalogTests: XCTestCase {
         )
     }
 
+    func testOtherAppsCanExcludeCurrentAppByEnum() {
+        XCTAssertEqual(
+            PortfolioAppCatalog.otherApps(excluding: .whatTheScore).map(\.name),
+            ["My Vinyl+", "EchoAI"]
+        )
+    }
+
     func testOtherAppsUseHTTPSURLs() {
         for app in PortfolioAppCatalog.otherApps {
             XCTAssertEqual(app.appStoreURL.scheme, "https")
@@ -21,5 +28,6 @@ final class PortfolioAppsCatalogTests: XCTestCase {
         let app = PortfolioAppCatalog.otherApps[0]
         _ = OtherAppRow(app: app)
         _ = OtherAppsSection()
+        _ = OtherAppsSection(excluding: .echoAI)
     }
 }

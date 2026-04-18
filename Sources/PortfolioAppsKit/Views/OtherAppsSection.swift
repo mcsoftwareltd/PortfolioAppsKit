@@ -3,8 +3,11 @@ import SwiftUI
 public struct OtherAppsSection: View {
     private let apps: [PortfolioApp]
 
-    public init(apps: [PortfolioApp] = PortfolioAppCatalog.otherApps) {
-        self.apps = apps
+    public init(
+        excluding excludedApp: PortfolioAppIdentifier? = nil,
+        apps: [PortfolioApp]? = nil
+    ) {
+        self.apps = apps ?? PortfolioAppCatalog.otherApps(excluding: excludedApp)
     }
 
     public var body: some View {

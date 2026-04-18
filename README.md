@@ -17,7 +17,7 @@ import PortfolioAppsKit
 
 struct SettingsView: View {
     var body: some View {
-        OtherAppsSection()
+        OtherAppsSection(excluding: .myVinylPlus)
     }
 }
 ```
