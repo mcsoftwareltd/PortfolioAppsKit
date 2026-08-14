@@ -6,14 +6,19 @@ final class PortfolioAppsCatalogTests: XCTestCase {
     func testOtherAppsExposeExpectedOrderedNames() {
         XCTAssertEqual(
             PortfolioAppCatalog.otherApps.map(\.name),
-            ["My Vinyl+", "What the Score", "EchoAI"]
+            ["My Vinyl+", "What the Score", "EchoAI", "MapInk: Map Notes"]
         )
     }
 
     func testOtherAppsCanExcludeCurrentAppByEnum() {
         XCTAssertEqual(
             PortfolioAppCatalog.otherApps(excluding: .whatTheScore).map(\.name),
-            ["My Vinyl+", "EchoAI"]
+            ["My Vinyl+", "EchoAI", "MapInk: Map Notes"]
+        )
+
+        XCTAssertEqual(
+            PortfolioAppCatalog.otherApps(excluding: .mapInk).map(\.name),
+            ["My Vinyl+", "What the Score", "EchoAI"]
         )
     }
 

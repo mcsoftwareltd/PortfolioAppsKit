@@ -19,6 +19,12 @@ public enum PortfolioAppCatalog {
             name: "EchoAI",
             assetName: "EchoAI",
             appStoreURL: URL(string: "https://apps.apple.com/gb/app/echoai-ai-meeting-recorder/id6761034332")!
+        ),
+        PortfolioApp(
+            id: PortfolioAppIdentifier.mapInk.rawValue,
+            name: "MapInk: Map Notes",
+            assetName: "MapInk",
+            appStoreURL: URL(string: "https://apps.apple.com/gb/app/mapink-map-notes/id6768144274")!
         )
     ]
 
