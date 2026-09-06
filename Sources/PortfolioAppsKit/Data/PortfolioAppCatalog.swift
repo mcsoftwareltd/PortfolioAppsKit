@@ -6,13 +6,13 @@ public enum PortfolioAppCatalog {
             id: PortfolioAppIdentifier.myVinylPlus.rawValue,
             name: "My Vinyl+",
             assetName: "MyVinylPlus",
-            appStoreURL: URL(string: "https://apple.co/41yJhHM")!
+            appStoreURL: URL(string: "https://apps.apple.com/app/id1547173908?itscg=30200&itsct=apps_box_link")!
         ),
         PortfolioApp(
             id: PortfolioAppIdentifier.whatTheScore.rawValue,
             name: "What the Score",
             assetName: "WhatTheScore",
-            appStoreURL: URL(string: "https://apple.co/3YPvmHR")!
+            appStoreURL: URL(string: "https://apps.apple.com/app/id1609259034")!
         ),
         PortfolioApp(
             id: PortfolioAppIdentifier.echoAI.rawValue,
