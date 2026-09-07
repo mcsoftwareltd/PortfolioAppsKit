@@ -26,3 +26,11 @@ struct SettingsView: View {
 `OtherAppRow` uses the same installation banner when used on its own. macOS opens the App Store URL. Custom apps should use an `https://apps.apple.com/app/id123456789` URL so the package can extract the numeric App Store ID. URLs without a valid ID open as links instead.
 
 The banner uses StoreKit and still downloads through the App Store. Its availability and install controls are managed by Apple.
+
+## Demo app
+
+Open `Demo/PortfolioAppsDemo.xcodeproj` and select the `PortfolioAppsDemo` scheme. For a physical iPhone, select your signing team in the target's Signing & Capabilities settings, choose the device, and run.
+
+Tap any app row to test the bottom installation banner. The demo references this checkout directly, so package changes are included on the next build without publishing a release. Verify the actual StoreKit banner and installation on a physical device with App Store access.
+
+The Xcode project is checked in. If you edit its configuration in `Demo/project.yml`, regenerate it with `xcodegen generate --spec Demo/project.yml`.
