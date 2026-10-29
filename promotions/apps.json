@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "what-the-score",
+      "name": "What the Score",
+      "appStoreID": "1609259034",
+      "enabled": true,
+      "iconURL": "https://raw.githubusercontent.com/mcsoftwareltd/PortfolioAppsKit/main/Sources/PortfolioAppsKit/Resources/PortfolioApps.xcassets/WhatTheScore.imageset/wts-icon.png"
+    },
+    {
+      "id": "echoai",
+      "name": "EchoAI",
+      "appStoreID": "6761034332",
+      "enabled": true,
+      "iconURL": "https://raw.githubusercontent.com/mcsoftwareltd/PortfolioAppsKit/main/Sources/PortfolioAppsKit/Resources/PortfolioApps.xcassets/EchoAI.imageset/echoai-icon.png"
+    },
+    {
+      "id": "mapink",
+      "name": "MapInk: Map Notes",
+      "appStoreID": "6768144274",
+      "enabled": true,
+      "iconURL": "https://raw.githubusercontent.com/mcsoftwareltd/PortfolioAppsKit/main/Sources/PortfolioAppsKit/Resources/PortfolioApps.xcassets/MapInk.imageset/mapink-icon.png"
+    }
+  ]
+}
